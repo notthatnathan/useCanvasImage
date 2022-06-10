@@ -1,6 +1,6 @@
 {
   "name": "@notthatnathan/use-canvas-image",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A React hook for automatically exporting a canvas to img.",
   "main": "dist/index.js",
   "exports": {
