@@ -23,7 +23,7 @@ Because we’re not able to insert our function directly into the drawing thread
 
 ### Basic
 
-For use with FullStory.
+Example use with FullStory’s `.fs-exclude` class.
 
 ```js
 // in component that renders canvas
@@ -54,7 +54,7 @@ useEffect(() => {
 
 ### 3rd party
 
-For use with @react-three/xr.
+Example use with [@react-three/xr](https://github.com/pmndrs/react-xr).
 
 ```js
 useCanvasImage({
