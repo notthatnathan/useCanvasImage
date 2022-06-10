@@ -45,7 +45,7 @@ useEffect(() => {
 </div>
 ```
 ```html
-// html output
+/* html output */
 <div style="position: relative">
   <canvas class="fs-exclude" />
   <img />
@@ -73,7 +73,7 @@ useCanvasImage({
 </div>
 ```
 ```html
-// html output
+/* html output */
 <div style="position: relative">
   <canvas class="fs-exclude" />
   <img />
