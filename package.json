@@ -1,0 +1,39 @@
+{
+  "name": "@notthatnathan/use-canvas-element",
+  "version": "1.0.0",
+  "description": "A React hook for automatically exporting a canvas to img.",
+  "main": "dist/index.js",
+  "exports": {
+    "require": "./dist/index.js",
+    "default": "./dist/index.modern.js"
+  },
+  "scripts": {
+    "build": "microbundle"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notthatnathan/useCanvasImage.git"
+  },
+  "author": "Nathan Fitzsimmons",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/notthatnathan/useCanvasImage/issues"
+  },
+  "homepage": "https://github.com/notthatnathan/useCanvasImage#readme",
+  "peerDependencies": {
+    "react": "^16.6.0 || ^17"
+  },
+  "devDependencies": {
+    "microbundle": "^0.13.0"
+  },
+  "dependencies": {
+    "usehooks-ts": "^2.5.4",
+    "uuid": "^8.3.2"
+  },
+  "keywords": [
+    "canvas",
+    "react",
+    "fullstory",
+    "logrocket"
+  ]
+}
