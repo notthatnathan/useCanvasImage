@@ -57,7 +57,6 @@ const useCanvasImage = ({
 
     createImg()
     // insert img after canvas
-    // TODO dedupe this, HMR keeps adding imgs
     canvasRef.current.after(imgRef.current)
   }
 
