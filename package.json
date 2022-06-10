@@ -1,5 +1,5 @@
 {
-  "name": "@notthatnathan/use-canvas-element",
+  "name": "@notthatnathan/use-canvas-image",
   "version": "1.0.1",
   "description": "A React hook for automatically exporting a canvas to img.",
   "main": "dist/index.js",
