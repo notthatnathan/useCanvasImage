@@ -24,11 +24,10 @@
     "react": "^16.6.0 || ^17"
   },
   "devDependencies": {
-    "microbundle": "^0.13.0"
+    "microbundle": "^0.15.0"
   },
   "dependencies": {
-    "usehooks-ts": "^2.5.4",
-    "uuid": "^8.3.2"
+    "usehooks-ts": "^2.5.4"
   },
   "keywords": [
     "canvas",
