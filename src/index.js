@@ -3,7 +3,7 @@ import { useInterval } from 'usehooks-ts'
 
 // by default, expect a positioned parent for the canvas
 // img will render behind it
-const IMG_STYLE = 'position: absolute; top: 0; left: 0; z-index: 0;'
+const IMG_STYLE = 'position: absolute; top: 0; left: 0; z-index: 0; pointer-events: none;'
 const CANVAS_STYLE = 'position: absolute; top: 0; left: 0; z-index: 1;'
 
 /**
