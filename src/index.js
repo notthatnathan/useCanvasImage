@@ -64,11 +64,10 @@ const useCanvasImage = ({
     requestAnimationFrame(() => {
       if (!canvasRef.current || !imgRef.current) return
 
-      // generate new img src
-      const dataUrl = canvasRef.current.toDataURL(fileType, quality)
-
       // set src on img
-      imgRef.current.src = dataUrl
+      canvasRef.current.toBlob(function(blob) {
+        imgRef.current.src = URL.createObjectURL(blob)
+      }, fileType, quality)
     })
   }
 
