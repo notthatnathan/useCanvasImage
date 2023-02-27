@@ -18,6 +18,7 @@ const CANVAS_STYLE = 'position: absolute; top: 0; left: 0; z-index: 1;'
  * @param {String} fileType what img format to output. default, recommended: image/jpeg
  * @param {Number} quality 0-1. the compression quality. only applies to image/jpeg or image/webp. default: 0.5
  * @param {Number} interval ms. how often to update the image. default: 100
+ * @param {Boolean} isEnabled pass false to prevent anything here from firing
  * @returns {Function} function to be called any time the canvas is drawn on
  */
 const useCanvasImage = ({
@@ -28,6 +29,7 @@ const useCanvasImage = ({
   fileType = 'image/jpeg', // fullstory doesn't like png
   quality = 0.7,
   interval = null,
+  isEnabled = true,
 }) => {
   const canvasRef = useRef()
   const imgRef = useRef()
@@ -72,6 +74,8 @@ const useCanvasImage = ({
   }
 
   useEffect(() => {
+    if (!isEnabled) return
+
     let reselectTimeout
 
     const setCanvas = () => {
