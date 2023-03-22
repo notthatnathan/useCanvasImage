@@ -36,7 +36,9 @@ const useCanvasImage = ({
 
   const createImg = () => {
     // create image
-    imgRef.current = new Image()
+    if (!imgRef.current) {
+      imgRef.current = new Image()
+    }
 
     // add classes to img
     if (imgClassname) imgRef.current.classList.add(...imgClassname.split(' '))
